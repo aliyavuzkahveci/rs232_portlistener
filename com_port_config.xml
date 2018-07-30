@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RS232PortList>
+	<RS232Port portName="COM10">
+		<portDetails baudRate="9600" charSize="8" parity="N" stopBits="1" flowControl="N" />
+		<portProtocol stx="02" etx="03" dle="true" cr="true" statusUpdateTime="500" rxBufferSize="16384" txBufferSize="12000" >
+			<dataControl sod="0E" eod="0F" typeName="MS" >
+				<delimeter>0D</delimeter>
+				<delimeter>10</delimeter>
+			</dataControl>
+			<dataControl sod="1C" eod="1D" typeName="OC" >
+				<delimeter>0D</delimeter>
+				<delimeter>10</delimeter>
+			</dataControl>
+		</portProtocol>
+	</RS232Port>
+	<RS232Port portName="COM7">
+		<portDetails baudRate="115200" charSize="8" parity="N" stopBits="1" flowControl="N" />
+		<portProtocol stx="02" etx="03" dle="true" cr="true" statusUpdateTime="5000" rxBufferSize="16384" txBufferSize="12000" />
+	</RS232Port>
+</RS232PortList>
